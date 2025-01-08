@@ -63,7 +63,7 @@
                     </div>
                     <!-- Single Service Card End -->
                     <div class="services__card flex justify-center items-center border-none">
-                        <a href="services.html" class="dml-btn dml-btn__outline">Learn More</a>
+                        <a href="{{ url('services') }}" class="dml-btn dml-btn__outline">Learn More</a>
                     </div>
                     <!-- Single Service Card End -->
                 </div>
@@ -123,11 +123,11 @@
                 </div>
                 <div class="flex justify-center mt-8">
                     <!-- <a href="who-we-serve.html"
-               ><img
-                class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-                src="assets/img/lg-arrow-right.svg"
-                alt="Arrow"
-              /></a> -->
+                   ><img
+                    class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                    src="assets/img/lg-arrow-right.svg"
+                    alt="Arrow"
+                  /></a> -->
                     <a href="who-we-serve.html" class="dml-btn dml-btn__outline">Read More</a>
                 </div>
             </div>
@@ -280,11 +280,11 @@
                 </div>
                 <div class="flex justify-center mt-8">
                     <!-- <a href="who-we-serve.html"
-               ><img
-                class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
-                src="assets/img/lg-arrow-right.svg"
-                alt="Arrow"
-              /></a> -->
+                   ><img
+                    class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+                    src="assets/img/lg-arrow-right.svg"
+                    alt="Arrow"
+                  /></a> -->
                     <a href="why-choose-docmedilink.html" class="dml-btn dml-btn__outline">Read More</a>
                 </div>
             </div>
@@ -369,8 +369,8 @@
                             one-time achievement but a continuous journey of growth and
                             improvement. </p>
                         <!-- <button class="underline text-primary font-semibold mt-7">
-                Show More
-               </button> -->
+                    Show More
+                   </button> -->
                     </div>
                 </div>
             </div>

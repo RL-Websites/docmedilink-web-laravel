@@ -18,8 +18,8 @@
     <!--====||  Header Section Start ||====-->
     <header class="header">
         <div class="2xl:container mx-auto flex justify-between items-center">
-            <a href="index.html">
-                <img src="assets/img/logo.svg" alt="Docmedilink Logo" />
+            <a href="{{ url('/') }}">
+                <img src="{{ URL::asset('assets') }}/img/logo.svg" alt="Docmedilink Logo" />
             </a>
             <nav class="header__menus">
                 <ul class="flex gap-7">
@@ -63,11 +63,11 @@
                     <div>
                         <h4 class="font-bold">Quick Links</h4>
                         <ul class="footer__menus flex flex-col md:gap-7 gap-4 mt-5">
-                            <li><a class="active" href="/index.html">Home</a></li>
+                            <li><a class="active" href="/{{ url('/') }}">Home</a></li>
                             <li><a href="/services.html">Services</a></li>
-                            <li><a href="/index.html#about-us">About us</a></li>
+                            <li><a href="/{{ url('/') }}#about-us">About us</a></li>
                             <li><a href="/clinicians.html">Clinicians</a></li>
-                            <li><a href="/index.html#contact-us">Contact us</a></li>
+                            <li><a href="/{{ url('/') }}#contact-us">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="md:mt-0 mt-12">

@@ -1,12 +1,15 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
 
-Route::get('/', function () {
-    $data['page_name'] = 'frontend_home';
-    return view('frontend.index', $data);
+
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index');
+    Route::get('services', 'services');
 });
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
