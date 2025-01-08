@@ -7,11 +7,12 @@
 
         <title>{{ config('app.name', 'Docmedilink') }}</title>
         <!-- Fonts -->
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link
           rel="shortcut icon"
-          href="{{asset('img/favicon.png')}}"
+          href="{{asset('assets/img/favicon.png')}}"
           type="image/x-icon"
         />
 
@@ -25,11 +26,58 @@
             </style>
         @endif
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            <main>
+    <body class="antialiased">
+        <!--====||  Header Section Start ||====-->
+		<header class="header">
+			<div class="2xl:container mx-auto flex justify-between items-center">
+				<a href="index.html">
+					<img src="assets/img/logo.svg" alt="Docmedilink Logo" />
+				</a>
+				<nav class="header__menus">
+					<ul class="flex gap-7">
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/services.html">Services</a></li>
+						<li><a href="/clinicians.html">Clinicians</a></li>
+						<li><a href="/index.html#about-us">About us</a></li>
+						<li><a href="/index.html#contact-us">Contact us</a></li>
+						<li class="sm-block w-[100px]">
+							<a
+								target="_blank"
+								href="https://app.docmedilink.com/login"
+								class="dml-btn dml-btn__primary"
+								>Login</a
+							></li
+						>
+					</ul>
+				</nav>
+
+				<div class="sm-hidden">
+					<a
+						target="_blank"
+						href="https://app.docmedilink.com/login"
+						class="dml-btn dml-btn__primary"
+						>Login</a
+					>
+				</div>
+
+				<button class="toggle-menu">
+					<img
+						class="hamburger-icon"
+						src="assets/img/hamburger.svg"
+						alt="Hamburger"
+					/>
+					<img
+						class="close-icon"
+						src="assets/img/close.svg"
+						alt="Close"
+						style="display: none"
+					/>
+				</button>
+			</div>
+		</header>
+		<!--====||  Header Section End ||====-->
+            <main  class="lg:pt-[130px] pt-[50px] overflow-x-hidden">
                 @yield('content')
             </main>
-        </div>
     </body>
 </html>
