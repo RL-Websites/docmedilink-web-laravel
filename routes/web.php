@@ -4,7 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    $data['page_name'] = 'frontend_home';
+    return view('frontend.index', $data);
 });
 
 Route::get('/dashboard', function () {
